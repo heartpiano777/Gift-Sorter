@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Sorter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="standard">
+        <canvas id="backgroundcvs" width="1200" height="675"></canvas>
+        <canvas id="characvs" width="300" height="300"></canvas>
+        <div id="screen-filter"></div>
+
+        <div id="game-area">
+            <p id="time-text">60</p>
+            <div id="text-area">
+                <p id="text">a blue ball, two pretty dolls, five candies<br>in a pink box</p>
+            </div>
+
+            <div id="item-area">
+                <img src="materials/toys/くまのぬいぐるみ.PNG" id="stuffed-animal" class="toysPNG">
+                <img src="materials/toys/つみ木.PNG" id="wooden-blocks" class="toysPNG">
+                <img src="materials/toys/なわとび.PNG" id="jump-rope" class="toysPNG">
+                <img src="materials/toys/クレヨンセット.PNG" id="crayon" class="toysPNG">
+                <img src="materials/toys/水色のボール.PNG" id="ball" class="toysPNG">
+                <img src="materials/toys/紫の本.PNG" id="book" class="toysPNG">
+                <img src="materials/toys/赤いミニカー.PNG" id="mini-car" class="toysPNG">
+                <img src="materials/toys/鍵盤楽器.PNG" id="keyboard-instrument" class="toysPNG">
+            </div>
+
+            <div id="box-area">
+                <img src="materials/box/whitebox.webp" id="whitebox" class="box_webp">
+                <img src="materials/box/greenbox.webp"id="greenbox" class="box_webp">
+                <img src="materials/box/pinkbox.webp" id="pinkbox" class="box_webp">
+                <img src="materials/box/light-bluebox.webp" id="light-bluebox" class="box_webp">
+                <img src="materials/box/orangebox.webp" id="orangebox" class="box_webp">
+            </div>
+
+            <div id="true-area">
+                <div id="white" class="true-area-div"></div>
+                <div id="green" class="true-area-div"></div>
+                <div id="pink" class="true-area-div"></div>
+                <div id="light-blue" class="true-area-div"></div>
+                <div id="orange" class="true-area-div"></div>
+            </div>
+        </div>
+
+        <div id="title-area">
+        <div id="title">
+            <h1>Gift Sorter</h1>
+        </div>
+        <div id="btn-area">
+            <button type="button" id="start" class="btn">
+                <img src="materials/button/startbtn.PNG" class="btn-img">
+            </button>
+            <button type="button" id="about" class="btn">
+                <img src="materials/button/aboutbtn.PNG" class="btn-img">
+            </button>
+        </div>
+        </div>
+
+        <div id="about-area">
+            <div id="about-text-area">
+                <h2>story</h2>
+                <p class="about-text">
+                    It’s just before Christmas at Santa Claus’s house. Santa and his reindeer are very busy sorting all the presents.
+                    You’ve been asked by Santa to help with the sorting.
+                    Let’s start organizing the presents one after another!
+                </p>
+                <h2>How to Play</h2>
+                <p class="about-text">
+                    You will be given three pieces of information as a task: the type of toy, the number of toys, and the color of the present box.
+                    Drag and drop the toys according to the task and place them into the present box!
+                    Once you’ve placed all the toys inside, the present box will be wrapped, and Santa will be delighted!
+                    The time limit is 60 seconds.
+                    Let’s sort as many presents as we can within the time limit.
+                </p>
+                <button type="button" id="return" class="btn">
+                    <img src="materials/button/returnbtn.PNG" class="btn-img">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <p lang="ja">
+        使わせていただいた素材<br>
+        キャラクター：素材good https://sozai-good.com/<br>
+        背景：AIPICT https://aipict.com/<br>
+        効果音：効果音ラボ https://soundeffect-lab.info/<br>
+        音楽：甘茶の音楽工房 https://amachamusic.chagasi.com/
+    </p>
+</body>
+<script src="main.js"></script>
+</html>
