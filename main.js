@@ -7,6 +7,8 @@ const ScreenFilter = document.getElementById("screen-filter");
 const TitleArea = document.getElementById("title-area");
 const AboutArea = document.getElementById("about-area");
 let AboutTextArea = document.getElementById("about-text-area");
+const SaveAboutTextArea = document.querySelector("#about-text-area").outerHTML;
+
 const TimeText = document.getElementById("time-text");
 const game_area = document.getElementById("game-area");
 
@@ -183,7 +185,9 @@ const timer_event = () => {
     }
 }
 
-const end = () => {
+
+const end = () => {        
+    AboutTextArea = document.getElementById("about-text-area");
     AboutTextArea.remove();
     AboutArea.insertAdjacentHTML('afterbegin','<div id="about-text-area"></div>');
     AboutTextArea = document.getElementById("about-text-area");
@@ -199,28 +203,17 @@ const end = () => {
         comment_num = comment[2];
     }
     AboutTextArea.insertAdjacentHTML('beforeend','<p class="about-text">'+comment_num+'</p>');
-
-    AboutTextArea.insertAdjacentHTML('beforeend','<button type="button" id="return" class="btn"><img src="materials/button/returnbtn.PNG" class="btn-img"></button>');
-    returnbtn = document.getElementById("return");
     game_area.style.display = "none";
     TitleArea.style.display = "none";
     AboutArea.style.display = "block";
     returnbtn.style.display = "block";
     returnbtn.addEventListener('click', function(){
-        TitleArea.style.display = "block";
-        AboutArea.style.display = "none";
-        returnbtn.style.display = "none";
-        ScreenFilter.style.visibility = "visible";
-        if(isFeatureEnabled == false){
-            bgm.pause();
-        }
-        btn_SE.currentTime = 0;
-        btn_SE.play();
+        returnbtnclick(1);
     });
 }
 
+isFeatureEnabled = !isFeatureEnabled;
 window.onload = function(){
-    isFeatureEnabled = !isFeatureEnabled;
     game_area.style.display = "none";
     let image = new Image();
     image.src = 'materials/background/christmas_room07.png';
@@ -251,15 +244,24 @@ window.onload = function(){
         btn_SE.currentTime = 0;
         btn_SE.play();
     });
-
     returnbtn.addEventListener('click', function(){
-        TitleArea.style.display = "block";
-        AboutArea.style.display = "none";
-        returnbtn.style.display = "none";
-        if(isFeatureEnabled == false){
-            bgm.pause();
-        }
-        btn_SE.currentTime = 0;
-        btn_SE.play();
+        returnbtnclick(0);
     });
+}
+
+const returnbtnclick = (num) => {
+    TitleArea.style.display = "block";
+    AboutArea.style.display = "none";
+    returnbtn.style.display = "none";
+    ScreenFilter.style.visibility = "visible";
+    if(isFeatureEnabled == false){
+        bgm.pause();
+    }
+    if(num == 1){
+        AboutTextArea = document.getElementById("about-text-area");
+        AboutTextArea.remove();
+        AboutArea.insertAdjacentHTML('afterbegin',SaveAboutTextArea);
+    }
+    btn_SE.currentTime = 0;
+    btn_SE.play();
 }
