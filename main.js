@@ -12,10 +12,34 @@ const SaveAboutTextArea = document.querySelector("#about-text-area").outerHTML;
 const TimeText = document.getElementById("time-text");
 const game_area = document.getElementById("game-area");
 
-const true_SE = new Audio("materials/SE/クイズ正解5.mp3");
-const false_SE = new Audio("materials/SE/ビープ音4.mp3");
-const btn_SE = new Audio("materials/SE/決定ボタンを押す2.mp3");
-const bgm = new Audio("materials/bgm/christmasnomachi.mp3");
+let true_SE, false_SE, btn_SE, bgm;
+
+function loadSound(src,id){
+    return new Promise((resolve,reject) => {
+        const sound = new Audio();
+        sound.src = src;
+        if(id){
+            sound.id = id;
+        }
+        sound.addEventListener('canplaythrough', () => resolve(sound), { once: true });
+        sound.addEventListener('error', () => reject(new Error(`サウンド読み込み失敗: ${src}`)), { once: true });
+    });
+}
+
+async function loadallSounds(){
+    try {
+        [true_SE, false_SE, btn_SE, bgm] = await Promise.all([
+            loadSound("materials/SE/クイズ正解5.mp3", "true_SE"),
+            loadSound("materials/SE/ビープ音4.mp3", "false_SE"),
+            loadSound("materials/SE/決定ボタンを押す2.mp3", "btn_SE"),
+            loadSound("materials/bgm/christmasnomachi.mp3", "bgm")
+        ]);
+    }catch(error){
+        console.error("サウンドの読み込みでエラーが発生",error);
+    }
+}
+
+loadallSounds();
 
 let returnbtn = document.getElementById("return");
 
