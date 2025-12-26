@@ -5,7 +5,7 @@ import { CharaCvs,
         ScreenFilter,TitleArea,AboutArea,AboutTextArea,SaveAboutTextArea,
         isFeatureEnabled,setIsFeatureEnabled,
         TimeText, game_area,returnbtn, 
-        ReAboutTextArea} from './variables.js';
+        ReAboutTextArea,resultadd} from './variables.js';
 import { Q_toyslist } from './setting.js';
 import { end } from './end.js';
 
