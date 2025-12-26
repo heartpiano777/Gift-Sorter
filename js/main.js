@@ -86,12 +86,12 @@ const drag_and_drop = () =>{
 setIsFeatureEnabled();
 window.onload = async function(){
     await materials.loadallMaterials();
-        BackCtx.drawImage(materials.backimage, 0, 0);
-        game_area.style.display = "none";
+    BackCtx.drawImage(materials.backimage, 0, 0);
+    game_area.style.display = "none";
 
-        const startbtn = document.getElementById("start");
-        startbtn.addEventListener('click', function(){//ゲームの内容をセットする
-            time = 5;
+    const startbtn = document.getElementById("start");
+    startbtn.addEventListener('click', function(){//ゲームの内容をセットする
+        time = 60;
         TitleArea.style.display = "none";
         game_area.style.visibility ="visible";
         game_area.style.display = "block";
