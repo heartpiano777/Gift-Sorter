@@ -1,0 +1,3 @@
+materialsset.jsで素材の読み込み。
+
+スタートボタンが押されたら、reset関数を呼び出し、drag_and_drop関数を呼び出している。

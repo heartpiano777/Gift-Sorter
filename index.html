@@ -47,36 +47,29 @@
         </div>
 
         <div id="title-area">
-        <div id="title">
-            <h1>Gift Sorter</h1>
+            <div class="toggle_area">
+                <div class="toggle_button">
+                    <input id="toggle" class="toggle_input" type='checkbox'>
+                    <label for="toggle" class="toggle_label">
+                </div>
+            </div>
+            <div id="title">
+                <h1 class="titletext" id="title_en">Gift Sorter</h1>
+                <h1 class="titletext" id="title_ja">わけわけ☆プレゼント</h1>
+            </div>
+            <div id="btn-area">
+                <button type="button" id="start" class="btn">
+                    <img src="materials/button/startbtn.PNG" class="btn-img">
+                </button>
+                <button type="button" id="about" class="btn">
+                    <img src="materials/button/aboutbtn.PNG" class="btn-img">
+                </button>
+            </div>
         </div>
-        <div id="btn-area">
-            <button type="button" id="start" class="btn">
-                <img src="materials/button/startbtn.PNG" class="btn-img">
-            </button>
-            <button type="button" id="about" class="btn">
-                <img src="materials/button/aboutbtn.PNG" class="btn-img">
-            </button>
-        </div>
-        </div>
+        
 
         <div id="about-area">
-            <div id="about-text-area">
-                <h2>story</h2>
-                <p class="about-text">
-                    It’s just before Christmas at Santa Claus’s house. Santa and his reindeer are very busy sorting all the presents.
-                    You’ve been asked by Santa to help with the sorting.
-                    Let’s start organizing the presents one after another!
-                </p>
-                <h2>How to Play</h2>
-                <p class="about-text">
-                    You will be given three pieces of information as a task: the type of toy, the number of toys, and the color of the present box.
-                    Drag and drop the toys according to the task and place them into the present box!
-                    Once you’ve placed all the toys inside, the present box will be wrapped, and Santa will be delighted!
-                    The time limit is 60 seconds.
-                    Let’s sort as many presents as we can within the time limit.
-                </p>
-            </div>
+            <div id="about-text-area"></div>
             <button type="button" id="return" class="btn">
                     <img src="materials/button/returnbtn.PNG" class="btn-img">
             </button>
@@ -90,6 +83,11 @@
         効果音：効果音ラボ https://soundeffect-lab.info/<br>
         音楽：甘茶の音楽工房 https://amachamusic.chagasi.com/
     </p>
+
 </body>
-<script src="main.js"></script>
+<script src="js/main.js"></script>
+<script src="js/variable.js"></script>
+<script src="js/screendraw.js"></script>
+<script src="js/setting.js"></script>
+<script src="js/end.js"></script>
 </html>
