@@ -76,8 +76,8 @@ window.onload = function(){
         BackCtx.drawImage(image, 0, 0, 1792, 1024, 0, 0, 1200, 675); 
     };
     const startbtn = document.getElementById("start");
-    startbtn.addEventListener('click', function(){//ゲームの内容をセットする
-        time = 5;
+    startbtn.addEventListener('click', function(){
+        time = 60;
         TitleArea.style.display = "none";
         game_area.style.visibility ="visible";
         game_area.style.display = "block";

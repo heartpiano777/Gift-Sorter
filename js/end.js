@@ -5,14 +5,12 @@ const end = () => {
         AboutArea.insertAdjacentHTML('afterbegin','<div id="about-text-area"></div>');
         AboutTextArea = document.getElementById("about-text-area");
         AboutTextArea.insertAdjacentHTML('beforeend','<h2>result</h2>');
-        AboutTextArea.insertAdjacentHTML('beforeend','<h3>Correct count: '+result[0]+'</h3>');
-        AboutTextArea.insertAdjacentHTML('beforeend','<h3>InCorrect count: '+result[1]+'</h3>');
+        AboutTextArea.insertAdjacentHTML('beforeend','<h3>Correct count: '+result[0]+'   InCorrect count: '+result[1]+'</h3>');
     }else{
         AboutArea.insertAdjacentHTML('afterbegin','<div id="about-text-area"></div>');
         AboutTextArea = document.getElementById("about-text-area");
         AboutTextArea.insertAdjacentHTML('beforeend','<h2>結果</h2>');
-        AboutTextArea.insertAdjacentHTML('beforeend','<h3>せいかい数: '+result[0]+'</h3>');
-        AboutTextArea.insertAdjacentHTML('beforeend','<h3>まちがえた数: '+result[1]+'</h3>');
+        AboutTextArea.insertAdjacentHTML('beforeend','<h3>せいかい数: '+result[0]+'　まちがえた数: '+result[1]+'</h3>');
     }
     
     let comment_num = 0;

@@ -54,7 +54,15 @@ const comment = ["Santa Claus and his reindeer are delighted that you helped the
     "And you thought that you wouldn’t mind working a little harder. "+
     "It seems you’ll be able to have a wonderful Christmas.",
 
-    "Santa Claus and his reindeer are deeply moved that you helped them, saying, "+
+    "Santa and his reindeer were amazed by your speed, exclaiming, ”You’re a lifesaver!”"+
+    "Santa had been struggling to sort all the gifts for the children, "+
+    "and he was so moved by your help that he thanked you with tears of joy."+
+    "He gave you sweets and a special gift as a token of his appreciation. "+
+    "Even the reindeer is humming happily,"+
+    "expecting extra carrots from a cheerful Santa! Seeing them so happy made you feel wonderful, too."+
+    " It’s definitely going to be a magical Christmas!"
+
+    /*"Santa Claus and his reindeer are deeply moved that you helped them, saying, "+
     "“You really saved us! I can’t believe how fast you work!” "+
     "Santa Claus, with tears of joy in his eyes, said, "+
     "“You exceeded my expectations. I’m truly glad I asked you.” "+
@@ -64,28 +72,28 @@ const comment = ["Santa Claus and his reindeer are delighted that you helped the
     "The reindeer is humming a tune, thinking he’ll get lots of carrots when Santa is in such a good mood. "+
     "Watching Santa and the reindeer, you felt truly glad that you helped them. "+
     "You even got souvenirs, and their happiness made you feel happy too. "+
-    "There’s no doubt this will be a wonderful Christmas!"
+    "There’s no doubt this will be a wonderful Christmas!"*/
 ];
 
-const comment_ja = ["サンタクロースとトナカイは、あなたに手伝ってもらえて喜んでいます。"+
-                    "サンタクロースはあなたに「君ならもっとできる。また手伝ってくれないかい？」と、キラキラした目で言いました。"+
+const comment_ja = ["サンタとトナカイは、あなたに手伝ってもらえて喜んでいます。"+
+                    "サンタはあなたに「君ならもっとできる。また手伝ってくれないかい？」と、キラキラした目で言いました。"+
                     "トナカイも「頑張って！」という顔をしています。"+
                     "あなたはまた頑張ることにしました。"+
                     "もう少しで素敵なクリスマスを迎えられそうですね。",
 
-                    "サンタクロースとトナカイは、あなたに手伝ってもらえて「とても助かったよ！」と喜んでいます。"+
-                    "サンタクロースはあなたに「思った通りだ、君に頼んでよかった」と、優しい目で言いました。"+
+                    "サンタとトナカイは、あなたに手伝ってもらえて「とても助かったよ！」と喜んでいます。"+
+                    "サンタはあなたに「思った通りだ、君に頼んでよかった」と、優しい目で言いました。"+
                     "トナカイはすっかりあなたと仲良くなり、ニンジンがほしいという顔をしています。"+
-                    "あなたはサンタクロースとトナカイの顔を見て、手伝ってよかったと思いました。"+
+                    "あなたはサンタとトナカイの顔を見て、手伝ってよかったと思いました。"+
                     "そして、もう少し頑張っても良いかなと思いました。"+
                     "素敵なクリスマスを迎えられそうです。",
 
-                    "サンタクロースとトナカイは、あなたに手伝ってもらえて「とても助かったよ！　君がこんなにも仕事が速いなんて！」と感激しています。"+
-                    "サンタクロースはあなたに「君は想像以上だ、君に頼んで本当によかった」と、嬉し涙を流しながら言いました。"+
-                    "実はサンタクロースは、プレゼントの仕分けに本当に苦労していました。"+
-                    "ですが、プレゼントをお願いするかわいいよいこたちのためには、何としてでもクリスマスまでにプレゼントを仕分けしないといけないと思っていたのです。"+
-                    "サンタクロースは何度もあなたに感謝し、なんとお土産にお菓子とプレゼントまでくれました！"+
-                    "トナカイは、サンタクロースの機嫌が良いとたくさんニンジンをもらえると思い、鼻歌を歌っています。"+
-                    "あなたはサンタクロースとトナカイの様子を見て、本当に手伝ってよかったと思いました。お土産ももらえたし、こちらまで幸せになりました。"+
+                    "サンタとトナカイは、あなたに手伝ってもらえて「とても助かったよ！　君がこんなにも仕事が速いなんて！」と感激しています。"+
+                    "サンタはあなたに「想像以上だ、君に頼んで本当によかった」と、嬉し涙を流しながら言いました。"+
+                    "実はサンタは、プレゼントの仕分けに本当に苦労していました。"+
+                    "ですが、プレゼントをお願いするかわいいよいこたちのためには、何としてでもクリスマスまでにプレゼントを仕分けしようと思っていたのです。"+
+                    "サンタは何度もあなたに感謝し、なんとお土産にお菓子とプレゼントまでくれました！　"+
+                    "トナカイは、サンタの機嫌が良いとたくさんニンジンをもらえると思い、鼻歌を歌っています。"+
+                    "あなたはサンタとトナカイの様子を見て、本当に手伝ってよかったと思いました。お土産ももらえたし、こちらまで幸せになりました。"+
                     "これで素敵なクリスマスになること間違いなしです！"
                     ];
