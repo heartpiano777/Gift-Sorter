@@ -61,10 +61,12 @@ window.onload = function(){
     title_en.style.display = "none";
     abouttext(true);
     language.addEventListener('change', () => {
-        if (language.checked) {            
+        if (language.checked) {
+            document.documentElement.lang = "ja";    
             title_ja.style.display = "none";
             title_en.style.display = "block";
         } else {
+            document.documentElement.lang = "en";
             title_en.style.display = "none";
             title_ja.style.display = "block";
         }
